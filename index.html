@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1200, initial-scale=0.25">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>地產風水師 林鶴洋｜資產佈局・啟動財庫・37年不動產×20年風水命理</title>
 <meta name="description" content="林鶴洋老師，37年不動產實戰經驗結合20年風水命理，專精地產戰略、陽宅堪輿、命理科儀，協助您讓房產成為活的財庫。電話：0910-097-752">
 <meta property="og:title" content="地產風水師 林鶴洋｜資產佈局・啟動財庫">
@@ -539,10 +539,104 @@ footer {
 
 /* ─── RESPONSIVE ─── */
 /* ── 手機版 ≤ 900px ── */
+@media (max-width:900px) {
 
+  /* NAV */
+  nav { padding:0.9rem 1.5rem; }
+  .nav-links { display:none; }
+  .nav-brand-ch { font-size:1rem; }
+  .nav-brand-en { font-size:0.5rem; }
+
+  /* HERO */
+  .hero { grid-template-columns:1fr; min-height:auto; }
+  .hero-left {
+    padding:6rem 1.5rem 2.5rem;
+    text-align:center;
+    align-items:center;
+  }
+  .hero-left::before { display:none; }
+  .hero-title { font-size:2.6rem; text-align:center; }
+  .hero-name-row {
+    flex-direction:column; gap:0.4rem;
+    align-items:center;
+  }
+  .hero-name { font-size:1.3rem; }
+  .hero-name-title { border-left:none; padding-left:0; font-size:0.72rem; }
+  .hero-tags { justify-content:center; }
+  .hero-desc { text-align:left; font-size:0.88rem; }
+  .hero-actions { justify-content:center; }
+  .hero-eyebrow { justify-content:center; }
+  .hero-stats { justify-content:center; gap:2rem; }
+  .hero-right { min-height:60vw; order:-1; }
+  .hero-plate-name { font-size:1rem; }
+  .hero-plate-sub { font-size:0.55rem; }
+
+  /* GOLD STRIP */
+  .gold-strip { padding:0.7rem 1.5rem; gap:1.5rem; }
+  .strip-item { font-size:0.6rem; }
+
+  /* SECTIONS */
+  section { padding:3.5rem 1.5rem; }
+
+  /* ABOUT */
+  .about-section { grid-template-columns:1fr; }
+  .about-img-col { min-height:260px; order:-1; }
+  .about-text-col { padding:3rem 1.5rem; }
+  .about-quote-text { font-size:1rem; }
+  .about-desc { font-size:0.88rem; }
+
+  /* SERVICES */
+  .services-header { grid-template-columns:1fr; gap:1.5rem; }
+  .services-grid { grid-template-columns:1fr; }
+  .service-card { padding:2rem 1.5rem; }
+  .service-name { font-size:1rem; }
+
+  /* WHY */
+  .why-section { grid-template-columns:1fr; }
+  .why-img-col { min-height:250px; order:-1; }
+  .why-text-col { padding:3rem 1.5rem; }
+  .why-card { padding:1.2rem; }
+  .why-card-title { font-size:0.95rem; }
+  .why-card-desc { font-size:0.8rem; }
+
+  /* CONTACT */
+  .contact-grid { grid-template-columns:1fr; gap:1rem; }
+  .contact-btns { flex-direction:column; align-items:center; }
+  .line-btn, .phone-btn { width:100%; max-width:320px; justify-content:center; }
+
+  /* FOOTER */
+  footer {
+    padding:2rem 1.5rem;
+    flex-direction:column;
+    text-align:center;
+    gap:0.8rem;
+  }
+
+  /* SEC TITLES */
+  .sec-title { font-size:1.8rem; }
+  .sec-eyebrow { font-size:0.6rem; }
+}
 
 /* ── 小手機 ≤ 480px ── */
-
+@media (max-width:480px) {
+  .hero-title { font-size:2.2rem; }
+  .hero-name { font-size:1.15rem; }
+  .hero-stats { gap:1.5rem; }
+  .stat-num { font-size:1.6rem; }
+  .hero-tags { flex-direction:column; align-items:center; gap:0.4rem; }
+  .hero-tag { font-size:0.6rem; padding:0.2rem 0.7rem; }
+  .btn-gold, .btn-outline { padding:0.75rem 1.5rem; font-size:0.78rem; }
+  .about-tags { gap:0.4rem; }
+  .about-tag { font-size:0.65rem; }
+  .service-list li { font-size:0.75rem; }
+  .sec-title { font-size:1.6rem; }
+  .acol-row { padding:1rem 1.2rem; }
+  .acol-title { font-size:0.82rem; }
+  .contact-card { padding:1.5rem 1rem; }
+  .contact-value { font-size:0.9rem; }
+  nav { padding:0.8rem 1.2rem; }
+  .nav-brand-ch { font-size:0.95rem; }
+}
 </style>
 </head>
 <body>
@@ -1071,6 +1165,14 @@ footer {
   .acol-more a:hover { color: var(--gold-light); }
 
   /* Responsive */
-  
+  @media (max-width: 900px) {
+    .articles-header { padding: 4rem 2rem 2rem; }
+    .articles-cols-wrap { margin: 0 2rem 4rem; }
+    .articles-cols {
+      grid-template-columns: 1fr;
+    }
+    .acol-divider { display: none; }
+    .acol-row { padding: 1.1rem 1.5rem; }
+  }
 
 >
